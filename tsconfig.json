@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    /* Base Options: */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "verbatimModuleSyntax": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    /* If NOT transpiling with TypeScript: */
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    /* If your code doesn't run in the DOM: */
+    "lib": ["ESNext"]
+  },
+  "include":["src", "src/index.ts"]
+}
