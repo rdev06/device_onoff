@@ -1,0 +1,30 @@
+{
+  "name": "device_onoff",
+  "version": "1.0.0",
+  "description": "This is a device controller to toggle between open and close",
+  "homepage": "https://github.com/rdev06/device_onoff#readme",
+  "bugs": {
+    "url": "https://github.com/rdev06/device_onoff/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdev06/device_onoff.git"
+  },
+  "license": "ISC",
+  "packageManager": "pnpm@10.10.0",
+  "author": "Roshan Dev",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "dev": "node esbuild.config.js",
+    "test": "node esbuild.config.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.15",
+    "esbuild": "^0.25.4"
+  },
+  "dependencies": {
+    "net-snmp": "^3.21.2"
+  }
+}
