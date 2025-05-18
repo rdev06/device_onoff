@@ -11,20 +11,22 @@
     "url": "git+https://github.com/rdev06/device_onoff.git"
   },
   "license": "ISC",
-  "packageManager": "pnpm@10.10.0",
   "author": "Roshan Dev",
+  "module": "src/index.ts",
   "type": "module",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "build": "node esbuild.config.js",
-    "dev": "node esbuild.config.js",
-    "test": "node esbuild.config.js"
+    "dev": "bun --watch src/index.ts",
+    "build": "bun build --minify --compile --outfile=dist/gate-controller src/index.ts",
+    "test": "bun src/test.ts"
   },
   "devDependencies": {
-    "@types/node": "^22.15.15",
-    "esbuild": "^0.25.4"
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
   },
   "dependencies": {
-    "net-snmp": "^3.21.2"
+    "net-snmp": "^3.22.0"
   }
 }

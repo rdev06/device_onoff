@@ -1,0 +1,8 @@
+{
+    "ws": "ws://localhost:8080/ws",
+    "deviceId": "deviceId_1234",
+    "gate":{
+        "ip": "127.0.0.1",
+        "port": 161
+    }
+}

@@ -8,7 +8,7 @@
     "resolveJsonModule": true,
     "moduleDetection": "force",
     /* If NOT transpiling with TypeScript: */
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
     /* If your code doesn't run in the DOM: */
