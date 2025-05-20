@@ -56,13 +56,14 @@ export default function connect() {
           socket.send(
             JSON.stringify({
               id: task.id,
+              deviceId: config.deviceId,
               status: 'success',
-              msg: 'Action sent successfully to hardware'
+              msg: `Action ${task.type} sent successfully to hardware`
             })
           );
         } else {
           // console.log(task);
-          socket.send(JSON.stringify({ id: task.id, status: 'unknown', msg: 'This type is unknown to us' }));
+          socket.send(JSON.stringify({ id: task.id, deviceId: config.deviceId, status: 'unknown', msg: 'This type is unknown to us' }));
         }
       } catch (error) {
         socket.send(
